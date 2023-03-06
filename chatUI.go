@@ -24,12 +24,12 @@ func initModel() model {
 	ta := textarea.New()
 	ta.Focus()
 	ta.SetHeight(5)
-	ta.SetWidth(60)
+	ta.SetWidth(80)
 	ta.Prompt = "|"
 	ta.FocusedStyle.CursorLine = lipgloss.NewStyle()
 	ta.ShowLineNumbers = false
 
-	vp := viewport.New(60, 20)
+	vp := viewport.New(80, 10)
 	vp.MouseWheelEnabled = true
 
 	return model{
